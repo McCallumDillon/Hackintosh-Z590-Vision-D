@@ -21,6 +21,7 @@ Hardware Specifics for this build:
 _________________________________
 
 ## Status
+Important to note I'm using 10th gen i9– I have not tested 11th gen.
 OpenCore 0.6.8
 Audio works natively.
 Thunderbolt works natively– nothing extra required.
