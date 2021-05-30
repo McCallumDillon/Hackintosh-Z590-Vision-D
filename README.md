@@ -1,5 +1,5 @@
 ## Hackintosh: [OpenCore 0.6.8] {Big Sur 11.2.2} Gigabyte Z590 Vision D, i9 10850k, Vega 64, 64gb 3600mhz, WD SN850
-The build at a high-level: Gigabyte Z590 Vision D, i9 10850k, Vega 64, 64gb 3600mhz, WD SN850
+The build at a high-level: Gigabyte Z590 Vision D, i9 10850k, Radeon 6900 XT, 64gb 3600mhz, WD SN850
 
 _________________________________
 
@@ -12,22 +12,23 @@ Hardware Specifics for this build:
 [Storage][Western Digitial SN850 1 TB NVME] {OSX: Big Sur} 
 [Storage][Samsung 970 Evo Plus 1 TB M.2-2280 NVME Solid State Drive] {Windows dedicated}
 [Storage][Samsung 860 Evo 500 GB 2.5" Solid State Drive] {Ubuntu dedicated}
-[Video Card][Sapphire Radeon RX VEGA 64 8 GB Video Card]
+[Video Card][XFX Merc Radeon 69000 XT Video Card]
 [Case][Corsair 680x ATX]
 [Power Supply][Corsair RMx Series™ RM850x 850 Watt 80 PLUS Gold PSU]
-[Wireless Network Adapter][ASUS AC68 ac1900]
+[Wireless Network Adapter][ASUS AC68 ac1900][Moved to on-board]
 [Monitor][Samsung 890 LC34H890WGNXGO 34.0" 3440x1440 100 Hz Monitor]
 ```
 _________________________________
 
 ## Status
 Important to note I'm using 10th gen i9– I have not tested 11th gen.
-OpenCore 0.6.8
+OpenCore 0.6.9 + Big Sur 11.4
 Audio works natively.
-Thunderbolt works natively– nothing extra required.
-Onboard WiFi works with AirportItlwm.kext – though not as fast or stable as my AC68 PCIe card.
+Thunderbolt works natively– nothing extra required. Not sure about some features like hot swapping.
+Onboard WiFi works with AirportItlwm.kext
 Onboard Bluetooth works great with the IntelBluetoothInjector.kext and IntelBluetoothFirmware.kext added.
-USB Map is custom and works great. 
+USB Map is custom mapped and works great.
+GeekBench GPU Score: 115,284 
 
 _________________________________
 
@@ -35,12 +36,15 @@ _________________________________
 XHCI Handoff = Enabled
 iGPU = Enabled
 Serial Port = Disabled
+Legacy USB Support = Disabled
 X.M.P. Profile = 1
 
 _________________________________
 
 ## Issues
-The Corsair Commander Pro RGB controller (that comes with the 680X Case) does NOT play nicely with BigSur. Something about the device ID triggers OSX into thinking you're running on a UPS (Uninterrupted power supply) with 0% battery. This does not affect performance, nothing is throttled, however you're greeted login with a warning message and you can NOT run OS updates this way. Upon some searching, this is a known issue with the Commander Pro RGB controller (I had no idea when I chose this case) and I have not uncovered any work arounds yet.
+The Corsair Commander Pro RGB controller (that comes with the 680X Case) does NOT play nicely with BigSur. Something about the device ID triggers OSX into thinking you're running on a UPS (Uninterrupted power supply) with 0% battery. This does not affect performance, nothing is throttled, however you're greeted login with a warning message and you can NOT run OS updates this way without the added kext bundled in this EFI which disables this service from ever starting.
+
+I didn't have issues with sleep until I swapped over to the 6900 xt. Still need to investigate whats going on there. It isn't waking and will reboot in sleep sometimes.
 
 _________________________________
 
