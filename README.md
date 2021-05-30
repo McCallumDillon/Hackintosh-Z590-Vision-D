@@ -1,4 +1,4 @@
-## Hackintosh: [OpenCore 0.6.8] {Big Sur 11.2.2} Gigabyte Z590 Vision D, i9 10850k, Vega 64, 64gb 3600mhz, WD SN850
+## Hackintosh: [OpenCore 0.6.9] {Big Sur 11.4} Gigabyte Z590 Vision D, i9 10850k, Radeon 6900 XT, 64gb 3600mhz, WD SN850
 The build at a high-level: Gigabyte Z590 Vision D, i9 10850k, Radeon 6900 XT, 64gb 3600mhz, WD SN850
 
 _________________________________
