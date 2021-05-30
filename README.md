@@ -33,6 +33,7 @@ GeekBench GPU Score: 115,284
 _________________________________
 
 ## Bios
+Revision F5d
 XHCI Handoff = Enabled
 iGPU = Enabled
 Serial Port = Disabled
