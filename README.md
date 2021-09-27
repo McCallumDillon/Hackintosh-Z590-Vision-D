@@ -1,4 +1,4 @@
-## Hackintosh: [OpenCore 0.6.9] {Big Sur 11.4} Gigabyte Z590 Vision D, i9 10850k, Radeon 6900 XT, 64gb 3600mhz, WD SN850
+## Hackintosh: [OpenCore 0.7.2] {Big Sur 11.6} Gigabyte Z590 Vision D, i9 10850k, Radeon 6900 XT, 64gb 3600mhz, WD SN850
 The build at a high-level: Gigabyte Z590 Vision D, i9 10850k, Radeon 6900 XT, 64gb 3600mhz, WD SN850
 
 _________________________________
@@ -22,7 +22,7 @@ _________________________________
 
 ## Status
 Important to note I'm using 10th gen i9– I have not tested 11th gen.
-OpenCore 0.6.9 + Big Sur 11.4
+OpenCore 0.7.2 + Big Sur 11.6
 Audio works natively.
 Thunderbolt works natively– nothing extra required. Not sure about some features like hot swapping.
 Onboard WiFi works with AirportItlwm.kext
@@ -53,6 +53,8 @@ _________________________________
 I have tested a StarTech.com U.2 to PCIe Adapter for 2.5" U.2 NVMe SSDs(SFF-8639)(PEX4SFF8639) and it works great. I paired it with a Intel DC P4610 Series SSDPE2KE016T801 1.6TB U.2 drive that worked fine in Big Sur.
 
 Additionally– I have tested a Ziyituod 4 Port SATA Controller Expansion PCIe card (Marvell 9215) (Non-Raid)(ZYT-SA3014) full with NAS drives that also worked great in Big Sur.
+
+Replace with your serial, MLB, etc.
 
 _________________________________
 
