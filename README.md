@@ -1,4 +1,4 @@
-## Hackintosh: [OpenCore 0.7.2] {Big Sur 11.6} Gigabyte Z590 Vision D, i9 10850k, Radeon 6900 XT, 64gb 3600mhz, WD SN850
+## Hackintosh: [OpenCore 0.7.5] {Montery 12.1} Gigabyte Z590 Vision D, i9 10850k, Radeon 6900 XT, 64gb 3600mhz, WD SN850
 The build at a high-level: Gigabyte Z590 Vision D, i9 10850k, Radeon 6900 XT, 64gb 3600mhz, WD SN850
 
 _________________________________
@@ -22,13 +22,12 @@ _________________________________
 
 ## Status
 Important to note I'm using 10th gen i9– I have not tested 11th gen.
-OpenCore 0.7.2 + Big Sur 11.6
+OpenCore 0.7.5 + Monterey 12.1
 Audio works natively.
 Thunderbolt works natively– nothing extra required. Not sure about some features like hot swapping.
 Onboard WiFi works with AirportItlwm.kext
 Onboard Bluetooth works great with the IntelBluetoothInjector.kext and IntelBluetoothFirmware.kext added.
-USB Map is custom mapped and works great.
-GeekBench GPU Score: 115,284 
+USB Map is custom mapped / works great / important to note that USB2.0 only works on the bottom blue ports on the motherboard– I disabled all other ports for the USB mapping.
 
 _________________________________
 
@@ -45,7 +44,7 @@ _________________________________
 ## Issues
 The Corsair Commander Pro RGB controller (that comes with the 680X Case) does NOT play nicely with BigSur. Something about the device ID triggers OSX into thinking you're running on a UPS (Uninterrupted power supply) with 0% battery. This does not affect performance, nothing is throttled, however you're greeted login with a warning message and you can NOT run OS updates this way without the added kext bundled in this EFI which disables this service from ever starting.
 
-I didn't have issues with sleep until I swapped over to the 6900 xt. Still need to investigate whats going on there. It isn't waking and will reboot in sleep sometimes.
+Sleep- I was having issues with sleep randomly waking/crashing so sleep has been switched to only wake by pressing power button. This isn't "native", but works perfectly.
 
 _________________________________
 
@@ -57,6 +56,14 @@ Additionally– I have tested a Ziyituod 4 Port SATA Controller Expansion PCIe c
 Replace with your serial, MLB, etc.
 
 _________________________________
+
+## Credits / Thanks
+Special thanks to MaLd0n on the Olarila group for expertise/assist on putting this together.
+Dortania guide.
+OpenCore.
+
+_________________________________
+
 
 ### Cheers!
 :)
