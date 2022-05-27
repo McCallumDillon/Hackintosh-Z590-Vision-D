@@ -31,7 +31,7 @@ Onboard Bluetooth with the IntelBluetoothInjector.kext and BlueToolFixup.kext ad
 USB Map is custom mapped / works great / important to note that USB2.0 only works on the bottom blue ports on the motherboard– I disabled all other ports for the USB mapping.
 GeekBench Single-Core CPU Score: 1,260
 GeekBench Multi-Core CPU Score: 11,139
-GeekBench GPU Score: 121,075 
+GeekBench GPU Score: 125,608 
 
 _________________________________
 
