@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>BuildVersion</key>
-	<string>193</string>
+	<string>51</string>
 	<key>CFBundleShortVersionString</key>
 	<string>2.3.1</string>
 	<key>CFBundleVersion</key>
@@ -11,6 +11,6 @@
 	<key>ProjectName</key>
 	<string>AppleIntelI210Ethernet</string>
 	<key>SourceVersion</key>
-	<string>269100006000000</string>
+	<string>269140002000000</string>
 </dict>
 </plist>
